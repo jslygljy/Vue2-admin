@@ -1,5 +1,5 @@
 {
-  "name": "vue-admin",
+  "name": "web",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "jsliujunyu@163.com <jsliujunyu@163.com>",
@@ -9,7 +9,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "vue": "^2.1.0",
+    "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1"
   },
   "devDependencies": {

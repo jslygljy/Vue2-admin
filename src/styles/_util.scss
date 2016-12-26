@@ -1,0 +1,32 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $positive;
+  z-index: 999;
+  .nav--a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  .nav--title {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.has-header {
+  position: relative;
+  display: block !important;;
+  top: 42px !important;
+}
+
+.background-grey{
+  background-color:$background-grey;
+}

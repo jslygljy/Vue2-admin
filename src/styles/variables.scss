@@ -1,0 +1,119 @@
+@import '../../styles/_reset.scss';
+$black: rgba(0, 0, 0, 0.8);
+$bgcolor: rgb(241, 244, 249);
+$defaultimgbg: rgb(239, 239, 239);
+$textgray: rgb(174, 174, 174);
+$border-color: #F1F1F1; // 所有边框的颜色
+$baseunit: 375/640*0.625rem; // iphone6 10px 对应的当前viewport的值
+$container-padding: 1rem; // 页面主体部分内边距
+$buttongraybg: #999999;
+$buttonprimarybg: #398DE3;
+$gray: #666666;
+$light: #fff !default;
+$stable: #f8f8f8 !default;
+$positive: #398de3 !default;
+$calm: #11c1f3 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #ef473a !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+$background-grey: #e5e9f1 !default;
+
+$font-family-sans-serif: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+$font-family-light-sans-serif: "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$font-family-serif: serif !default;
+$font-family-monospace: monospace !default;
+
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: 14px !default;
+$font-size-large: 18px !default;
+$font-size-small: 11px !default;
+
+html, body, #app {
+  height: 100%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus {
+  text-underline: none;
+  text-decoration: none;
+  color: $black;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+/* .expand-enter 定义进入的开始状态 */
+/* .expand-leave 定义离开的结束状态 */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+textarea{resize:none}
+.flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex-2 {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.flex-3 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.flex-4 {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+
+.flex-5 {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+}
