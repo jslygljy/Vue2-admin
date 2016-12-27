@@ -1,6 +1,5 @@
 <template>
   <div>
-
       <button type="button" v-on:click="show = !show" class="btn btn-default">toggle button</button>
 
   </div>
@@ -11,6 +10,7 @@
         getConfig
     } from 'Utils';
     import Vue from 'vue/dist/vue.js'
+
     export default {
         name: 'home',
         data() {

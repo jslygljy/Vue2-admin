@@ -8,8 +8,33 @@
 </head>
 
 <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <style>
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: opacity 0.5s
+        }
+        
+        .fade-enter,
+        .fade-leave-active {
+            opacity: 0
+        }
+    </style>
+    <div id="app">
+        <ul>
+            <li>
+                <router-link to="/">首页</router-link>
+            </li>
+            <li>
+                <router-link to="/phonevideo">录音</router-link>
+            </li>
+            <li>
+                <router-link to="/callphone">拨号</router-link>
+            </li>
+        </ul>
+        <transition name='fade' mode="out-in">
+            <router-view> </router-view>
+        </transition>
+    </div>
 </body>
 
 </html>
