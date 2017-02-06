@@ -50,9 +50,12 @@ new Vue({
 
                         <li><router-link :to="{name:'firstSencond',params:{id:321}}">sed</router-link></li>
                     </ol>
-                <li><router-link to="/sec">sec</router-link></li>
+                <li>
+                <router-link to="/sec">sec</router-link></li>
             </ul>
-            <router-view class="view one"></router-view>
+            <router-view class="view one" ></router-view>
+            <router-view class="view one" name='left' style="float:left;width:20%;background-color:#ff6600"></router-view>
+            <router-view class="view one" name='right' style="float:left;width:20%;background-color:#ccc"></router-view>
         </div>
     `
 }).$mount('#app')

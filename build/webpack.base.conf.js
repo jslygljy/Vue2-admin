@@ -23,7 +23,7 @@ module.exports = {
         extensions: ['', '.js', '.vue', '.json'],
         fallback: [path.join(__dirname, '../node_modules')],
         alias: {
-            'vue$': 'vue/dist/vue.common.js',
+            'vue$': 'vue/dist/vue',
             'src': path.resolve(__dirname, '../src'),
             'assets': path.resolve(__dirname, '../src/assets'),
             'Utils': path.resolve(__dirname, '../src/assets/utils/Utils'),
@@ -36,13 +36,13 @@ module.exports = {
     module: {
         loaders: [{
                 test: /\.vue$/,
-                loader: 'vue'
+                loader: 'vue-loader'
             },
             {
                 test: /\.js$/,
                 loader: 'babel',
                 include: projectRoot,
-                exclude: /node_modules/
+                exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//
             },
             {
                 test: /\.json$/,
