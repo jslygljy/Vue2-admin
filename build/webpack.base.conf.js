@@ -27,11 +27,13 @@ module.exports = {
             'src': path.resolve(__dirname, '../src'),
             'assets': path.resolve(__dirname, '../src/assets'),
             'Utils': path.resolve(__dirname, '../src/assets/utils/Utils'),
-            'components': path.resolve(__dirname, '../src/components')
+            'components': path.resolve(__dirname, '../src/components'),
+            'menu': path.resolve(__dirname, `../src/Router.js`),
+            'views': path.resolve(__dirname, `../src/views`),
         }
     },
     resolveLoader: {
-        fallback: [path.join(__dirname, '../node_modules')]
+        fallback: [path.join(__dirname, '../node_m odules')]
     },
     module: {
         loaders: [{
